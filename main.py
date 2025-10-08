@@ -32,6 +32,7 @@ def add_expense(date, amount, category, subcategory="", note=""):
         )
         return {"status": "ok", "id": cur.lastrowid}
     
+
 @mcp.tool()
 def list_expenses(start_date, end_date):
     '''List expense entries within an inclusive date range.'''
